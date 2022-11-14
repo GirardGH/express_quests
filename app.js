@@ -17,6 +17,7 @@ const usersHandlers = require("./usersHandlers");
 app.get("/api/users", usersHandlers.getUsers);
 app.get("/api/users/:id", usersHandlers.getUserById);
 app.post("/api/users", usersHandlers.postUser);
+app.put("/api/movies/:id", usersHandlers.updateUser);
 
 app.listen(port, (err) => {
   if (err) {
