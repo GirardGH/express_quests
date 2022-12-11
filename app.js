@@ -14,7 +14,7 @@ app.get("/", welcome);
 
 const usersHandlers = require("./usersHandlers");
 
-app.get("/api/users", usersHandlers.getUsers);
+app.get("/api/users", usersHandlers.getUser);
 app.get("/api/users/:id", usersHandlers.getUserById);
 app.post("/api/users", usersHandlers.postUser);
 app.put("/api/users/:id", usersHandlers.updateUser);
